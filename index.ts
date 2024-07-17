@@ -26,7 +26,7 @@ async function connectDb(){
 app.get("/", (req: any, res: any) =>{
     res.send(`
              <form action="/submit" method="POST">
-             <input name="title" type="text" placeholder="Title">
+             <input name="title" type="text" placeholder="Title"><br>
              <textarea name="markdown" rows="10" cols="50"></textarea>
              </br>
              <input type="submit" value="Submit">
