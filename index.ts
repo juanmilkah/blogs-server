@@ -24,7 +24,8 @@ async function connectDb(){
     col = db.collection("posts");
 }
 app.get("/", (req: any, res: any) =>{
-    res.send(`
+    res.send(`<h1>Convert Markdown to HTML</h>
+             <h3>Write markdown Content in the text Field</h3>
              <form action="/submit" method="POST">
              <input name="title" type="text" placeholder="Title"><br>
              <textarea name="markdown" rows="10" cols="50"></textarea>
